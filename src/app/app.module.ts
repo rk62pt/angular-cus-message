@@ -5,26 +5,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { CusMessageComponent } from './cus-message/cus-message.component';
-import { CusMessageService } from './cus-message/cus-message.service';
 import { MatDialogModule } from '@angular/material';
+import { CusMessageModule } from './cus-message/cus-message.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule 
-  ],
-  entryComponents: [
-    CusMessageComponent
+    FormsModule,
+    MatDialogModule,
+    CusMessageModule
   ],
   declarations: [ 
     AppComponent, 
     HelloComponent, 
-    CusMessageComponent
   ],
   bootstrap:    [ AppComponent ],
-  providers: [CusMessageService],
   exports: [ MatDialogModule ]
 })
 export class AppModule { }

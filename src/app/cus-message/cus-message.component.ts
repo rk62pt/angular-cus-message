@@ -11,5 +11,4 @@ export class CusMessageComponent{
 
   constructor(@Inject(MAT_DIALOG_DATA)public config: CusMessageConfig) { }
 
-
 }
